@@ -1,3 +1,5 @@
+/* General Styles */
+
 main {
   margin-top: 60px;
 }
@@ -26,4 +28,47 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+.bg-accent {
+  background-color: #6f5e4d;
+}
+
+.wrapper img {
+  width: 100%;
+}
+
+/* Flex Containers & Items (Mobile First) */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.block {
+  flex: 1;
+  margin: 10px;
+}
+
+.block-wide {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Flex Containers & Items (Desktop) */
+
+@media all and (min-width: 800px) {
+  .content {
+    padding: 0 10%;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .block,
+  .block-wide {
+    margin: 10px;
+  }
 }
